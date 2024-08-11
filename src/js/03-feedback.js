@@ -34,6 +34,9 @@ form.addEventListener("submit", (event) => {
     };
     console.log('Form data:', formData);
     localStorage.removeItem('feedback-form-state')
+    
+    emailInput.value = '';
+    messageInput.value = '';
 });
 loadFromState();
 
